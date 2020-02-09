@@ -1,0 +1,431 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+a:hover{
+    text-decoration: underline;
+}
+body{
+    text-align: center;
+    background: #ababab;
+}
+h3{
+    margin: 0 0 30px 0;
+}
+
+
+
+nav{
+    background: #ababab;
+    /*    background: #000;*/
+    color: #fff;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left:0;
+    z-index: 100;
+}
+nav ul{
+    background: red;
+}
+nav ul li{
+    display: inline-block;
+    float: right;
+    padding: 15px 0;
+}
+nav ul li:hover{
+    background: #666;
+}
+nav ul li a{
+    text-decoration: none;
+    color:white;
+    padding: 15px 35px;
+}
+nav ol{
+    display: none;
+}
+
+nav img{
+    float: left;
+    padding: 11px 20px;
+}
+nav img:hover{
+    cursor: pointer;
+}
+
+
+
+.titleAboutMe1{
+    background: #f7f0f0;
+    /*background: #fff;*/
+}
+.titleAboutMe{
+    text-align: center;
+    background: #f7f0f0;
+    /*background: #fff;*/
+    font-size: 14pt;
+    padding: 50px 0 50px 0;
+    margin: 0 20px 0 20px;
+    border-bottom: 1px solid #3F3C3C;
+    margin-top: 48px;
+}
+.containerAboutMe{
+    background: #f7f0f0;
+    /*background: #fff;*/
+    min-height: 77vh;
+    display: flex;
+    justify-content: center;
+    padding: 20px 80px; 
+}
+.containerAboutMe img{
+    width: 100%;
+    max-width: 500px;
+    max-height: 500px;
+    align-self: center;
+}
+.description{
+    background: #f7f0f0;
+    padding: 75px;
+    margin-left: 80px;
+    font-size: 17px;
+    text-align: center;
+    line-height: 25px;
+    align-self: center;
+    box-shadow: rgba(15, 15, 15, 0.2) 0px 5px 35px;
+}
+
+
+
+.titleAbilities1{
+    background: #fff;
+}
+.titleAbilities{
+    text-align: center;
+    background: #fff;
+    font-size: 14pt;
+    padding: 50px 0 50px 0;
+    margin: 0 20px 0 20px;
+    border-bottom: 1px solid #3F3C3C;
+}
+.containerAbilities{
+    background: #fff;
+    min-height: 81vh;
+    display: flex;
+    justify-content: center;
+}
+.abilities{
+    text-align: center;
+    background: #fff;
+    padding: 0px 60px 0px 60px;
+    align-self: center;
+}
+fieldset{
+    border: 0;
+    margin: 43px 0;
+    padding: 30px;
+    /*background: yellow;*/
+    box-shadow: rgba(15, 15, 15, 0.2) 0px 5px 35px;
+}
+legend{
+    padding: 4px 50px;
+    text-align: initial;
+    margin: 0 20px;
+    background: #ababab;
+    color: #fff;
+    border-radius: 6px;
+    text-align: center;
+}
+legend{
+    margin: 0;
+    font-size: 16px;
+}
+fieldset img{
+    margin: 10px 20px;
+}
+
+
+
+.titleProjects1{
+    background: #f7f0f0;
+}
+.titleProjects{
+    text-align: center;
+    background: #f7f0f0;
+    font-size: 14pt;
+    padding: 50px 0 50px 0;
+    margin: 0 20px;
+    border-bottom: 1px solid #3F3C3C;
+}
+.containerProjects{
+    min-height: 82vh;
+    background: #f7f0f0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px 40px;
+}
+.containerProjects img{
+    width: 100%;
+}
+.projects{
+    font-size: 0;
+    background: #f7f0f0;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+}
+.projectsPhoto{
+    align-self: center;
+    width: 100%;
+    position: relative;
+    min-width: 500px;
+    min-height: 246px;
+    max-width: 500px;
+    max-height: 246px;
+}
+.projectsDescription{
+    text-align: center;
+    font-size: 17px;
+    padding: 33px 40px;
+    /*padding: 40px;*/
+    margin: 20px 20px 20px 60px ;
+    line-height: 25px;
+    align-self: center;
+    box-shadow: rgba(15, 15, 15, 0.2) 0px 5px 35px;
+    min-height: 180px;
+}
+.overlay{
+    position: relative;
+    width: 100%;
+}
+.overlay .link{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    width: 100%;
+    height: 50%;
+    background: #111;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+.overlay:hover .link{
+    opacity: 0.7;
+}
+.overlay:hover .link:hover{
+    opacity: 0.9;
+}
+.overlay .linkToSite{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    width: 100%;
+    height: 50%;
+    background: #111;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+}
+.overlay:hover .linkToSite{
+    opacity: 0.7;
+}
+.overlay:hover .linkToSite:hover{
+    opacity: 0.9;
+}
+
+
+
+.titleContact{
+    text-align: center;
+    background: #ababab;
+    font-size: 14pt;
+    padding: 50px 0 50px 0;
+    margin: 0 20px;
+    border-bottom: 1px solid #3F3C3C;
+}
+.containerContact{
+    background: #ababab;
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap;
+}
+.contactWay{
+    margin: 30px 40px;
+    padding: 20px 30px;
+    background: #ababab;
+    display: inline-block;
+    color: #fff;
+    align-self: center;
+}
+.contactWay:hover{
+    background: #666;
+}
+.contactWay i:active{
+    font-size: 70px;
+    margin: 5px;
+}
+.tooltip {
+    position: relative;
+}
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 160px;
+    /*background-color: black;*/
+    /*color: #fff;*/
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -85px;
+    margin-bottom: 20px;
+}
+.contactWay:hover .tooltiptext {
+    visibility: visible;
+}
+.tooltip:hover .tooltiptext:active{
+    visibility: hidden;
+}
+
+
+
+.fa-linkedin,
+.fa-envelope,
+.fa-github-square{
+    font-size: 80px; 
+
+}
+.fa-bars{
+    font-size: 30px;
+}
+
+
+
+@media only screen and (max-width: 1100px) {
+    .containerAboutMe{
+        flex-wrap:wrap;
+        padding: 20px 60px;
+    }
+    .containerAboutMe img{
+        max-width: 350px;
+        max-height: 350px;
+    }
+    .description{
+        margin: 50px 20px;
+    }
+    .projects{
+        flex-wrap:wrap;
+        padding: 20px;
+        margin: 10px 0;
+    }
+    .projectsDescription{
+        margin: 20px 0 20px 0;
+    }
+    legend{
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 680px) {
+    .containerAboutMe{
+        padding: 20px 40px;
+    }
+    .description{
+        padding: 33px 40px;
+        margin: 20px 0 10px 0;
+    }
+    .containerAboutMe .picture img{
+        width: 300px;
+    }
+    .projectsDescription{
+        margin: 20px 0 10px 0;
+    }
+    h3{
+        margin: 10px 0 15px 0;
+    }
+    .projectsPhoto{
+        max-width: 500px;
+        max-height: 246px;
+        min-width: 100px;
+        min-height: 100px;
+    }
+    .containerProjects{
+        padding: 10px 15px 0 15px;
+    }
+    nav ul{
+        display: none;
+    }
+    nav ol{
+        display: block;
+        list-style-type: none;
+        width: 100%;
+        position: relative;
+    }
+    nav ol a{
+        display: block;
+    }
+    nav ol li a i{
+        position: absolute;
+        top:0;
+        right:0;
+        padding: 8px 20px;
+    }
+    nav ol li ol{
+        display: none;
+    }
+    nav ol li:hover ol{
+        display: block;
+        margin-top: 42px;
+        background: #ababab;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    nav ol li ol li a{
+        padding: 20px;
+    }
+    nav ol li ol li:hover{
+        background: #666;
+    }
+}
+@media only screen and (max-width: 400px) {
+    fieldset{
+        padding: 20px 10px;
+    }
+}
+
+
+
+#titleAboutMe1{
+    padding-top: 50px;
+    margin-top: -50px;
+}
+
+/*#titleAbilities1{
+    padding-top: 50px;
+    margin-top: -50px;
+}*/
+/*#containerProjects{
+    padding-top: 50px;
+    margin-top: -50px;
+}
+#containerContact{
+    padding-top: 50px;
+    margin-top: -50px;
+}*/
