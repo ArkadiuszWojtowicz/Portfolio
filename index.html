@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="pl">
     <head>
         <title>Portfolio - Arkadiusz Wójtowicz</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="CSS/styles.css" type="text/css" />
-        <link rel="stylesheet" href="CSS/fontello.css" type="text/css" />
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
         <script type="text/javascript" src="JS.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -15,28 +14,27 @@
             <img src="Images/polishFlag.jpg" alt="polish flag" width="40" onclick="changeLanguageToPL()">
             <img src="Images/englishFlag.jpg" alt="polish flag" width="38" onclick="changeLanguageToEN()">
             <ul>
-                <li><a href="#containerContact" id="contact">Kontakt</a></li>
-                <li><a href="#titleProjects1" id="projects">Projekty</a></li>
-                <li><a href="#titleAbilities1" id="skills">Umiejętności</a></li>
-                <li><a href="#titleAboutMe1" id="aboutMe">O mnie</a></li>
+                <li><a href="#titleContactDirection" id="contact">Kontakt</a></li>
+                <li><a href="#titleProjectsDirection" id="projects">Projekty</a></li>
+                <li><a href="#titleAbilitiesDirection" id="skills">Umiejętności</a></li>
+                <li><a href="#titleAboutMeDirection" id="aboutMe">O mnie</a></li>
             </ul>
             <ol>
-                <li><a href="#"><i class="fas fa-bars"></i></a>
+                <li><i class="fas fa-bars"></i>
                     <ol>
-                        <li><a href="#titleAboutMe1" id="aboutMeR">O mnie</a></li>
-                        <li><a href="#titleAbilities1" id="skillsR">Umiejętności</a></li>
-                        <li><a href="#titleProjects1" id="projectsR">Projekty</a></li>
-                        <li><a href="#containerContact" id="contactR">Kontakt</a></li>
+                        <li><a href="#titleAboutMeDirection" id="aboutMeR">O mnie</a></li>
+                        <li><a href="#titleAbilitiesDirection" id="skillsR">Umiejętności</a></li>
+                        <li><a href="#titleProjectsDirection" id="projectsR">Projekty</a></li>
+                        <li><a href="#titleContactDirection" id="contactR">Kontakt</a></li>
                     </ol>
             </ol>
         </nav>
 
-        <div class="titleAboutMe1" id="titleAboutMe1">
-            <div class="titleAboutMe">
-                <h2 id="titleAboutMe">O mnie</h2>
-            </div>
+        <div class="titleAboutMe" id="titleAboutMeDirection">
+            <h2 id="titleAboutMe">O mnie</h2>
         </div>
-        <div class="containerAboutMe" >
+        <div class="animatedBorder"></div>
+        <div class="containerAboutMe" id="containerAboutMe">
             <img src="Images/me.png" alt="no image" >
             <div class="description" id="description">Nazywam się Arkadiusz Wójtowicz. Aktualnie studiuję informatykę na Politechnice Lubelskiej, gdzie 
                 ukończyłem pierwszy stopień studiów zdobywając tytuł inżyniera. Od lutego zacząłem studia II stopnia. <br><br>
@@ -45,17 +43,18 @@
             </div>
         </div>
 
-        <div class="titleAbilities1" id="titleAbilities1">
-            <div class="titleAbilities">
-                <h2 id="titleAbilities">Umiejętności</h2>
-            </div>
+        <div class="border" id="titleAbilitiesDirection"></div>
+        
+        <div class="titleAbilities" >
+            <h2 id="titleAbilities">Umiejętności</h2>
         </div>
+        <div class="animatedBorder"></div>
         <div class="containerAbilities">
             <div class="abilities">
                 <fieldset>
                     <legend id="know">Technologie, które znam i wykorzystuję na codzień</legend>
-                    <img src="Images/php.jpg" alt="no image" width="100">
-                    <img src="Images/sql.jpg" alt="no image" width="100">
+                    <img src="Images/php.jpg" alt="no image" width="100" class="php">
+                    <img src="Images/sql.jpg" alt="no image" width="100" class="sql">
                     <img src="Images/html.jpg" alt="no image" width="100">
                     <img src="Images/css.jpg" alt="no image" width="100">
                     <img src="Images/js.jpg" alt="no image" width="100">
@@ -77,11 +76,12 @@
             </div>    
         </div>
 
-        <div class="titleProjects1" id="titleProjects1">
-            <div class="titleProjects">
-                <h2 id="titleProjects">Projekty</h2>
-            </div>
+        <div class="border" id="titleProjectsDirection"></div>
+        
+        <div class="titleProjects" >
+            <h2 id="titleProjects">Projekty</h2>
         </div>
+        <div class="animatedBorder"></div>
         <div class="containerProjects">
             <div class="projects">
                 <div class="projectsPhoto">
@@ -105,7 +105,7 @@
                     <div class="overlay">
                         <img src="Images/trainYourEnglish.jpg" alt="no image">  
                         <a class="linkToSite" href="https://github.com/ArkadiuszWojtowicz/trainYourEnglish" target="_blank"><p id="goToGitHubTye">Przejdź do GitHub</p></a>
-                        <a class="link" href="#" target="_blank"><p id="goToSiteTye">Przejdź do strony</p></a> <!-- strona link -->
+                        <a class="link" href="https://arkadiuszwojtowicz.github.io/TrainYourEnglish/" target="_blank"><p id="goToSiteTye">Przejdź do strony</p></a> <!-- strona link -->
                     </div>
                 </div>
                 <div class="projectsDescription">
@@ -118,23 +118,21 @@
             </div>
         </div>
 
-        <div class="titleContact">
-            <h2 id="titleContact">Kontakt</h2>
+        <div class="titleContact1" id="titleContactDirection">
+            <div class="titleContact">
+                <h2 id="titleContact">Kontakt</h2>
+            </div>
         </div>
         <div class="containerContact" id="containerContact">
-            <div class="contactWay">
-                <p><a href="https://www.linkedin.com/in/arkadiusz-w%C3%B3jtowicz-334b4b1a1/" target="_blank"><i class="fab fa-linkedin"></i></a></p>
-            </div>
+            <a href="https://www.linkedin.com/in/arkadiusz-w%C3%B3jtowicz-334b4b1a1/" target="_blank"><div class="contactWay"><i class="fab fa-linkedin"></i></div></a>
             <div class="contactWay">
                 <p id="p1" style="display: none">arkadiuszwojtowicz1997@gmail.com</p>
                 <div class="tooltip"><label><button onclick="copyToClipboard('#p1')" style="display: none"></button><i class="fas fa-envelope"></i></label>
                     <span class="tooltiptext" id="copyEmail">Kliknij aby skopiować!</span>
                 </div>
             </div>
-            <div class="contactWay">
-                <p><a href="https://github.com/ArkadiuszWojtowicz" target="_blank"><i class="fab fa-github-square"></i></a></p>
-            </div>
+            <a href="https://github.com/ArkadiuszWojtowicz" target="_blank"><div class="contactWay"><i class="fab fa-github-square"></i></div></a>
         </div>
-        
+
     </body>
 </html>

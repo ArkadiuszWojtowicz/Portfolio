@@ -14,7 +14,7 @@ a:hover{
 }
 body{
     text-align: center;
-    background: #ababab;
+    background: #fff;
 }
 h3{
     margin: 0 0 30px 0;
@@ -24,7 +24,6 @@ h3{
 
 nav{
     background: #ababab;
-    /*    background: #000;*/
     color: #fff;
     width: 100%;
     position: fixed;
@@ -61,24 +60,18 @@ nav img:hover{
 }
 
 
-
-.titleAboutMe1{
-    background: #f7f0f0;
-    /*background: #fff;*/
-}
 .titleAboutMe{
     text-align: center;
     background: #f7f0f0;
-    /*background: #fff;*/
+    background: #fff;
     font-size: 14pt;
     padding: 50px 0 50px 0;
     margin: 0 20px 0 20px;
-    border-bottom: 1px solid #3F3C3C;
     margin-top: 48px;
 }
 .containerAboutMe{
     background: #f7f0f0;
-    /*background: #fff;*/
+    background: #fff;
     min-height: 77vh;
     display: flex;
     justify-content: center;
@@ -91,7 +84,6 @@ nav img:hover{
     align-self: center;
 }
 .description{
-    background: #f7f0f0;
     padding: 75px;
     margin-left: 80px;
     font-size: 17px;
@@ -103,16 +95,12 @@ nav img:hover{
 
 
 
-.titleAbilities1{
-    background: #fff;
-}
+
 .titleAbilities{
     text-align: center;
     background: #fff;
     font-size: 14pt;
     padding: 50px 0 50px 0;
-    margin: 0 20px 0 20px;
-    border-bottom: 1px solid #3F3C3C;
 }
 .containerAbilities{
     background: #fff;
@@ -130,7 +118,6 @@ fieldset{
     border: 0;
     margin: 43px 0;
     padding: 30px;
-    /*background: yellow;*/
     box-shadow: rgba(15, 15, 15, 0.2) 0px 5px 35px;
 }
 legend{
@@ -152,20 +139,17 @@ fieldset img{
 
 
 
-.titleProjects1{
-    background: #f7f0f0;
-}
 .titleProjects{
     text-align: center;
     background: #f7f0f0;
+    background: #fff;
     font-size: 14pt;
     padding: 50px 0 50px 0;
-    margin: 0 20px;
-    border-bottom: 1px solid #3F3C3C;
 }
 .containerProjects{
-    min-height: 82vh;
+    min-height: 80vh;
     background: #f7f0f0;
+    background: #fff;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -177,6 +161,7 @@ fieldset img{
 .projects{
     font-size: 0;
     background: #f7f0f0;
+    background: #fff;
     align-self: center;
     display: flex;
     justify-content: center;
@@ -194,7 +179,6 @@ fieldset img{
     text-align: center;
     font-size: 17px;
     padding: 33px 40px;
-    /*padding: 40px;*/
     margin: 20px 20px 20px 60px ;
     line-height: 25px;
     align-self: center;
@@ -249,14 +233,16 @@ fieldset img{
 }
 
 
-
+.titleContact1{
+    background: #ababab;
+}
 .titleContact{
     text-align: center;
     background: #ababab;
     font-size: 14pt;
     padding: 50px 0 50px 0;
+    border-bottom: 1px solid #111;
     margin: 0 20px;
-    border-bottom: 1px solid #3F3C3C;
 }
 .containerContact{
     background: #ababab;
@@ -279,14 +265,15 @@ fieldset img{
     font-size: 70px;
     margin: 5px;
 }
+i:hover{
+    cursor: pointer;
+}
 .tooltip {
     position: relative;
 }
 .tooltip .tooltiptext {
     visibility: hidden;
     width: 160px;
-    /*background-color: black;*/
-    /*color: #fff;*/
     text-align: center;
     border-radius: 6px;
     padding: 5px;
@@ -305,6 +292,29 @@ fieldset img{
 }
 
 
+
+.animatedBorder{
+    display: inline-block;
+    background: #ababab;
+    height: 2px;
+    animation-name: animatedBorder1;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+@keyframes animatedBorder1 {
+    0%  {background: #ababab;width:0%;}
+    100% {background: #ababab;width:98%;}
+}
+
+.border{
+    background: #a6a897;
+    height: 2px;
+    display: inline-block;
+    width: 100%;
+    box-shadow: 0px 0px 72px 7px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 23px 3px rgba(0,0,0,0.75);
+}
 
 .fa-linkedin,
 .fa-envelope,
@@ -380,7 +390,7 @@ fieldset img{
     nav ol a{
         display: block;
     }
-    nav ol li a i{
+    nav ol li i{
         position: absolute;
         top:0;
         right:0;
@@ -404,28 +414,9 @@ fieldset img{
         background: #666;
     }
 }
-@media only screen and (max-width: 400px) {
-    fieldset{
-        padding: 20px 10px;
+@media only screen and (max-width: 607px) {
+    .php,
+    .sql{
+        margin: 0px 20px;
     }
 }
-
-
-
-#titleAboutMe1{
-    padding-top: 50px;
-    margin-top: -50px;
-}
-
-/*#titleAbilities1{
-    padding-top: 50px;
-    margin-top: -50px;
-}*/
-/*#containerProjects{
-    padding-top: 50px;
-    margin-top: -50px;
-}
-#containerContact{
-    padding-top: 50px;
-    margin-top: -50px;
-}*/
