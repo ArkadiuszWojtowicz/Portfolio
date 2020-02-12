@@ -13,8 +13,8 @@ function hideAfterMouseleave() {
         $('nav ol li ol').hide();
     });
 }
-//function hideMenuAfterClick() {
-//    $('hideMenu').click(function () {
-//        $('nav ol li ol').hide();
-//    });
-//}
+function hideMenuAfterClick() {
+    $('.hideMenu').click(function () {
+        $('nav ol li ol').hide();
+    });
+}
