@@ -12,4 +12,9 @@ function hideAfterMouseleave() {
     $('nav ol li ol').mouseleave(function () {
         $('nav ol li ol').hide();
     });
-}s
+}
+function hideMenuAfterClick() {
+    $('body').click(function () {
+        $('nav ol li ol').hide();
+    });
+}
