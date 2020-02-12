@@ -1,4 +1,4 @@
-function changeLanguageToEN(){
+function changeLanguageToEN() {
     document.getElementById("aboutMe").innerHTML = "About me";
     document.getElementById("skills").innerHTML = "Skills";
     document.getElementById("projects").innerHTML = "Projects";
@@ -24,10 +24,9 @@ function changeLanguageToEN(){
     document.getElementById("goToGitHubTye").innerHTML = "Go to GitHub";
     document.getElementById("goToSiteTye").innerHTML = "Go to website";
     document.getElementById("copyEmail").innerHTML = "Click to copy!";
-    
-    
+
 }
-function changeLanguageToPL(){
+function changeLanguageToPL() {
     document.getElementById("aboutMe").innerHTML = "O mnie";
     document.getElementById("skills").innerHTML = "Umiejętności";
     document.getElementById("projects").innerHTML = "Projekty";
@@ -54,14 +53,4 @@ function changeLanguageToPL(){
     document.getElementById("goToSiteTye").innerHTML = "Przejdź do strony";
     document.getElementById("copyEmail").innerHTML = "Kliknij aby skopiować!";
 
-
-}
-
-
-function copyToClipboard(element) {
-  var $temp = $("<input>");
-  $("body").append($temp);
-  $temp.val($(element).text()).select();
-  document.execCommand("copy");
-  $temp.remove();
-}
+}s

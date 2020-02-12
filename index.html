@@ -6,7 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="CSS/styles.css" type="text/css" />
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
-        <script type="text/javascript" src="JS.js"></script>
+        <script type="text/javascript" src="JS/changeLanguage.js"></script>
+        <script type="text/javascript" src="JS/copyEmail.js"></script>
+        <script type="text/javascript" src="JS/menuSmartphones.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     </head>
     <body>
@@ -20,12 +22,12 @@
                 <li><a href="#titleAboutMeDirection" id="aboutMe">O mnie</a></li>
             </ul>
             <ol>
-                <li><i class="fas fa-bars"></i>
+                <li><i class="fas fa-bars" onmouseover="showAfterHover()"></i>
                     <ol>
-                        <li><a href="#titleAboutMeDirection" id="aboutMeR">O mnie</a></li>
-                        <li><a href="#titleAbilitiesDirection" id="skillsR">Umiejętności</a></li>
-                        <li><a href="#titleProjectsDirection" id="projectsR">Projekty</a></li>
-                        <li><a href="#titleContactDirection" id="contactR">Kontakt</a></li>
+                        <li><a href="#titleAboutMeDirection" id="aboutMeR" onclick="hideAfterClick()" onmouseover="hideAfterMouseleave()">O mnie</a></li>
+                        <li><a href="#titleAbilitiesDirection" id="skillsR" onclick="hideAfterClick()" onmouseover="hideAfterMouseleave()">Umiejętności</a></li>
+                        <li><a href="#titleProjectsDirection" id="projectsR" onclick="hideAfterClick()" onmouseover="hideAfterMouseleave()">Projekty</a></li>
+                        <li><a href="#titleContactDirection" id="contactR" onclick="hideAfterClick()" onmouseover="hideAfterMouseleave()">Kontakt</a></li>
                     </ol>
             </ol>
         </nav>
